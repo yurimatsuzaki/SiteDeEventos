@@ -1,30 +1,25 @@
 // Dados simulados de eventos para todos os meses
 let img = document.getElementById('imgPoster')
 const eventDetails = {
-    // Janeiro
-    "2024-01-23": { title: "Show da Xuxa", preview: "Show da xuxa", description: "Que show da xuxa é essew", poster: "" },
-    // Fevereiro
-    "2024-02-14": { title: "Carnaval", preview: "Carnaval", description: "Dia de curtir.", poster: "" },
-    // Março
-    "2024-03-31": { title: "Páscoa", preview: "Festa da páscoa", description: "Celebração dos Ovos.", poster: "" },
-    // Abril
-    "2024-04-01": { title: "Show de Abril", preview: "Um grande show", description: "Um espetáculo imperdível.", poster: "" },
-    // Maio
-    "2024-05-12": { title: "Festa das Mães", preview: "Comemoração do Dia das Mães", description: "Celebração do Dia das Mães.", poster: "" },
-    // Junho
-    "2024-06-12": { title: "Dia dos Namorados", preview: "Dia dos namorados", description: "Celebração do amor", poster: "" },
-    // Julho
-    "2024-07-01": { title: "Férias escolares", preview: "Férias escolares", description: "Fériaaaaaasss", poster: "" },
-    // Agosto
-    "2024-08-25": { title: "Dia do Soldado", preview: "Dia do Soldado", description: "Celebração do Dia do Soldado.", poster: "" },
-    // Setembro
-    "2024-09-07": { title: "Independência do Brasil", preview: "Celebração da independência", description: "Comemoração do Dia da Independência.", poster: "" },
-    // Outubro
-    "2024-10-30": { title: "Carabao em sip", preview: "Carabao em sip", description: "Muita festa e alegria para o povo de sip", poster: "" },
-    // Novembro
-    "2024-11-20": { title: "Festa da Consciência Negra", preview: "Celebração da cultura afro-brasileira", description: "Um evento cultural importante.", poster: "" },
-    // Dezembro
-    "2024-12-25": { title: "Natal", preview: "Celebração do Natal", description: "Comemoração do Natal.", poster: "" },
+    "2024-10-08": { title: "Festa 1", preview: "Festa 1", description: "Muita festa e alegria para o povo de sip", poster: "imagens/post1.jpg" },
+
+    "2024-10-12": { title: "Festa 2", preview: "Festa 2", description: "Muita festa e alegria para o povo de sip", poster: "imagens/post3.jpeg" },
+
+    "2024-10-17": { title: "Festa 3", preview: "Festa 3", description: "Muita festa e alegria para o povo de sip", poster: "imagens/post3.jpg" },
+
+    "2024-10-28": { title: "Festa 4", preview: "Festa 4", description: "Muita festa e alegria para o povo de sip", poster: "imagens/post4.webp" },
+
+    "2024-10-30": { title: "Carabao em sip", preview: "Carabao em sip", description: "Muita festa e alegria para o povo de sip", poster: "imagens/circuito-furioso.png" },
+
+    "2024-11-05": { title: "Carabao em sip", preview: "Carabao em sip", description: "Muita festa e alegria para o povo de sip", poster: "imagens/post5.jpg" },
+
+    "2024-11-13": { title: "festa6", preview: "festa6", description: "Muita festa e alegria para o povo de sip", poster: "imagens/post6.jpeg" },
+
+    "2024-11-22": { title: "festa6", preview: "festa6", description: "Muita festa e alegria para o povo de sip", poster: "imagens/post7.jpg" },
+
+    "2024-11-25": { title: "festa6", preview: "festa6", description: "Muita festa e alegria para o povo de sip", poster: "imagens/post8.jpeg" },
+
+    "2024-11-29": { title: "festa6", preview: "festa6", description: "Muita festa e alegria para o povo de sip", poster: "imagens/post9.jpeg" },
 };
 
 const calendarElement = document.getElementById('event-calendar');
@@ -65,7 +60,6 @@ function generateCalendar(month) {
         calendarElement.appendChild(calendarDay);
     }
 }
-
 function showEventDetails(date) {
     const event = eventDetails[date];
     if (event) {
@@ -73,6 +67,15 @@ function showEventDetails(date) {
             <h3>${event.title}</h3>
             <p>${event.description}</p>
         `;
+        
+        // Atualize a área do pôster com a imagem ou texto padrão
+        const posterElement = document.querySelector('.poster');
+        if (event.poster) {
+            posterElement.innerHTML = `<img src="${event.poster}" alt="Poster do Evento" style="width: 100%; height: 100%; border-radius: 8px;">`;
+        } else {
+            posterElement.textContent = "Poster"; // Texto padrão se não houver imagem
+        }
+        
         eventDetailsElement.style.display = 'block'; 
     }
 }
