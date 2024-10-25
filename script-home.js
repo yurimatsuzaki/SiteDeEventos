@@ -12,6 +12,6 @@ btnIniciar.addEventListener('click', function(){
             AlertCity.close()
         })
     }else{
-        linkHome.setAttribute("href", "cadastro.html")
+        linkHome.setAttribute("href", "eventos.html")
     }
 })
