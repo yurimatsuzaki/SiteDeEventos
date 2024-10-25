@@ -1,7 +1,8 @@
 // Dados simulados de eventos para todos os meses
+let img = document.getElementById('imgPoster')
 const eventDetails = {
     // Janeiro
-    "2024-01-01": { title: "Ano Novo", preview: "Festa de Ano Novo", description: "Celebração do Ano Novo.", poster: "" },
+    "2024-01-23": { title: "Show da Xuxa", preview: "Show da xuxa", description: "Que show da xuxa é essew", poster: "" },
     // Fevereiro
     "2024-02-14": { title: "Carnaval", preview: "Carnaval", description: "Dia de curtir.", poster: "" },
     // Março
@@ -19,7 +20,7 @@ const eventDetails = {
     // Setembro
     "2024-09-07": { title: "Independência do Brasil", preview: "Celebração da independência", description: "Comemoração do Dia da Independência.", poster: "" },
     // Outubro
-    "2024-10-12": { title: "Dia das Crianças", preview: "Celebração das Crianças", description: "Um dia especial para as crianças.", poster: "r" },
+    "2024-10-30": { title: "Carabao em sip", preview: "Carabao em sip", description: "Muita festa e alegria para o povo de sip", poster: "" },
     // Novembro
     "2024-11-20": { title: "Festa da Consciência Negra", preview: "Celebração da cultura afro-brasileira", description: "Um evento cultural importante.", poster: "" },
     // Dezembro
