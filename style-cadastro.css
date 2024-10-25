@@ -28,6 +28,10 @@ main{
     margin: 30px 10px 0px 10px;
 }
 
+input{
+    padding: 5px;
+}
+
 #CorpoCadastro{
     max-width: 650px;
     min-height: 350px;
@@ -163,7 +167,7 @@ main{
 }
 
 a > button{
-    width: 480px;
+    width: 500px;
     height: 30px;
     font-weight: bold;
     display: block;

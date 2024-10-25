@@ -20,6 +20,6 @@ BTNentrar.addEventListener('click', function(){
             alertSenhaIncorreta.close()
         })
     }else{
-        LinkEntrar.setAttribute("href", "cadastro.html")
+        LinkEntrar.setAttribute("href", "eventos.html")
     }
 })
