@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-cadastro.css">
+    <link rel="stylesheet" href="style-responsive.css">
+
+    <title>Even Tree</title>
+</head>
+<body>
+    <main>
+        <section id="CorpoCadastro">
+            <h1>Cadastro</h1>
+            <section class="PartesCorpo">
+                <div id="UserName">
+                    <p>Nome completo:</p>
+                    <input type="text" name="username" id="username">
+                </div>
+                <div id="UserCadastro">
+                    <p>Email:</p>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div id="CPF">
+                    <p>CPF:</p>
+                    <input type="text" name="cpf" id="cpf">
+                </div>
+            </section>
+            <section  class="PartesCorpo">
+                <div id="Celular">
+                    <p>Celular:</p>
+                    <input type="tel" name="celular" id="celular">
+                </div>
+                <div id="SenhaCadastro">
+                    <p>Senha:</p>
+                    <input type="text" name="senha" id="senha">
+                </div>
+                <div id="SenhaConfirmar">
+                    <p>Confirme sua senha:</p>
+                    <input type="text" name="ConfirmarSenha" id="ConfirmarSenha">
+                </div>
+            </section>
+            <section  id="BtnEnviar">
+                <a href="#" id="BtnCadastro"><button type="submit" class="Entrar">Cadastrar</button></a>
+                <p id="Cadastrado"><a href="login.html" id="BtnCadastro">Já possui cadastro</a></p>
+            </section>
+        </section>
+    </main>
+
+    <dialog id="CampVazio">
+        <h2>Espaço vazio!</h2>
+        <button type="button" class="btnFechar">OK</button>
+    </dialog>
+
+    <dialog id="SenhasDif">
+        <h2>Senhas diferentes!</h2>
+        <button type="button" class="btnFechar">OK</button>
+    </dialog>
+
+    <script src="script-cadastro.js"></script>
+</body>
+</html>

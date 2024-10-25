@@ -1,0 +1,221 @@
+@font-face {
+    font-family: 'SF pro';
+    src: url(font/SFPRODISPLAYREGULAR.OTF) format(OpenType);
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'SF pro';
+}
+
+body{
+    background-image: url(imagens/fundo-marca-950.png);
+    background-repeat: repeat;
+    background-size: cover;
+    position: relative;
+}
+
+main{
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.PartesCorpo{
+    margin: 30px 10px 0px 10px;
+}
+
+#CorpoCadastro{
+    max-width: 650px;
+    min-height: 350px;
+    background-color: #171717;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#CorpoCadastro > h1{
+    color: #def256;
+    margin: 10px 0px 10px 20px;
+}
+
+#UserName{
+    margin: 15px 0px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#UserName > p{
+    color: white;
+    margin: 10px 0px 10px 10px;
+}
+
+#UserName > input{
+    width: 230px;
+    height: 30px;
+    border-radius: 5px;
+    border-style: none;
+    margin: auto;
+}
+
+#UserCadastro{
+    margin: 15px 0px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#UserCadastro > p{
+    color: white;
+    margin: 10px 0px 10px 10px;
+}
+
+#UserCadastro > input{
+    width: 230px;
+    height: 30px;
+    border-radius: 5px;
+    border-style: none;
+    margin: auto;
+}
+
+#CPF{
+    margin: 15px 0px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#CPF > p{
+    color: white;
+    margin: 10px 0px 10px 10px;
+}
+
+#CPF > input{
+    width: 230px;
+    height: 30px;
+    border-radius: 5px;
+    border-style: none;
+    margin: auto;
+}
+
+#Celular{
+    margin: 15px 0px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#Celular > p{
+    color: white;
+    margin: 10px 0px 10px 10px;
+}
+
+#Celular > input{
+    width: 230px;
+    height: 30px;
+    border-radius: 5px;
+    border-style: none;
+    margin: auto;
+}
+
+#SenhaCadastro{
+    margin: 15px 0px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#SenhaCadastro > p{
+    color: white;
+    margin: 10px 0px 10px 10px;
+}
+
+#SenhaCadastro > input{
+    width: 230px;
+    height: 30px;
+    border-radius: 5px;
+    border-style: none;
+    margin: auto;
+}
+
+#SenhaConfirmar{
+    margin: 15px 0px 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+#SenhaConfirmar > p{
+    color: white;
+    margin: 10px 0px 10px 10px;
+}
+
+#SenhaConfirmar > input{
+    width: 230px;
+    height: 30px;
+    border-radius: 5px;
+    border-style: none;
+    margin: auto;
+}
+
+#BtnEnviar > a{
+    display: block;
+    margin-left: 122px;
+    text-decoration: none;
+}
+
+a > button{
+    width: 480px;
+    height: 30px;
+    font-weight: bold;
+    display: block;
+    border-radius: 5px;
+    border-style: none;
+}
+
+a > button:hover{
+    background-color: rgb(188, 188, 188);
+    cursor: pointer;
+}
+
+#Cadastrado{
+    font-size: 0.8em;
+    text-align: center;
+    display: block;
+    margin: 20px;
+}
+
+#Cadastrado > a{
+    color: white;
+    display: block;
+    margin-left: 122px;
+}
+
+dialog{
+    width: 180px;
+    height: 80px;
+    border-radius: 10px;
+    padding: 8px;
+    background-color: #e4ff33;
+    color: #171717;
+    border: none;
+    position: relative;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+dialog::backdrop{
+    background: #1717179c;
+}
+
+dialog > button{
+    width: 50px;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #171717;
+    color: white;
+    position: absolute;
+    left: 130px;
+    top: 55px;
+}

@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 750px){
+    #menuBurguer{
+        display: block;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .ItensMenu2{
+        text-decoration: none;
+        color: white;
+        position: relative;
+        font-size: 1.1em;
+    }
+
+    #burguer{
+        display: none;
+        min-height: 168px;
+    }
+    
+    #burguer > ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #burguer > ul > li{
+        width: 100%;
+        text-align: center;
+        display: inline-block;
+    }
+    
+    #burguer > ul > li:hover{
+        background-color: #7f9600;
+    }
+    
+    #ImgLogin{
+        display: none;
+    }
+
+    #CorpoLogin{
+        border-radius: 10px;
+    }
+
+    #CorpoCadastro{
+        display: block;
+    }
+    
+    #BtnEnviar > a{
+        display: block;
+        margin-left: 0px;
+    }
+    
+    a > button{
+        width: 230px;
+        margin: auto
+    }
+
+    #titulo{
+        color: white;
+        font-size: 6vw;
+        padding: 20px;
+        position: absolute;
+        left: 0%;
+        top: 10%;
+    }
+
+    .selecionar .botao {
+        width: 250px;
+        height: 60px;
+        border-radius: 10px;
+        border: none;
+        margin-left: 40px;
+    }
+}

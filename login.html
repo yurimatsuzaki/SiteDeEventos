@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-Login.css">
+    <link rel="stylesheet" href="style-responsive.css">
+
+    <title>Even Tree</title>
+</head>
+<body>
+    <main>
+        <section id="ImgLogin">
+            <img src="imagens/calendario-com-fundo.png" alt="">
+        </section>
+        <section id="CorpoLogin">
+            <h1>Login</h1>
+            <div id="AreaUser">
+                <p>Email:</p>
+                <input type="email" name="username" id="username">
+            </div>
+            <div id="AreaSenha">
+                <p>Senha:</p>
+                <input type="text" name="senha" id="senha">
+            </div>
+            <a href="#" id="EntrarLink"><button type="submit" id="EntrarBTN">Entrar</button></a>
+            <p id="NaoCadastro"><a href="cadastro.html" rel="next">Não possui cadasatro?</a></p>
+        </section>
+    </main>
+
+    <dialog id="CampVazio">
+        <h2>Espaço vazio!</h2>
+        <button type="button" class="btnFechar">OK</button>
+    </dialog>
+
+    <dialog id="SenhasIncorreta">
+        <h2>Senhas incorreta!</h2>
+        <button type="button" class="btnFechar">OK</button>
+    </dialog>
+
+    <script src="script-login.js"></script>
+</body>
+</html>

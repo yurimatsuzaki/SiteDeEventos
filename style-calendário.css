@@ -1,0 +1,208 @@
+@font-face {
+    font-family: 'SF pro';
+    src: url(font/SFPRODISPLAYREGULAR.OTF) format(OpenType);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'SF pro';
+}
+
+header{
+    max-height: 110px;
+    background-color: #def265;
+    display: flex;
+    justify-content: center;
+}
+
+header > img{
+    width: 300px;
+    padding: 10px;
+}
+
+#menuBurguer{
+    text-align: right;
+    background-color: #171717;
+    display: none;
+}
+
+.material-symbols-outlined{
+    margin: 7px;
+    padding: 5px;
+    color: #ffffff;
+    border-radius: 3px;
+    transition: 150ms;
+}
+
+.material-symbols-outlined:hover{
+    cursor: pointer;
+    background-color: #def265;
+    color: #171717;
+    transform: scale(1.3);
+}
+
+#burguer{
+    display: none;
+}
+
+nav{
+    height: 40px;
+    background-color: #171717;
+}
+
+nav > ul{
+    display: flex;
+    flex-direction: row;
+}
+
+nav > ul > li{
+    list-style: none;
+    padding: 10px 15px;
+}
+
+.ItensMenu{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    font-size: 1.1em;
+}
+
+.ItensMenu::after{
+    content: " ";
+    width: 0%;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #def265;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 200ms ease-in-out;
+}
+
+.ItensMenu:hover::after{
+    width: 102%;
+}
+
+main{
+    margin: auto;
+    max-width: 800px;
+    min-height: 900px;
+    background-color: #f2f2f2;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.148);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#AreaPerfil{
+    text-align: center;
+    padding: 10px;
+    min-height: 250px;
+    max-width: 400px;
+    background-color: #171717;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+#AreaPerfil > img{
+    border-radius: 100%;
+    border: solid;
+}
+
+#AreaPerfil > p{
+    margin-top: 10px;
+    max-width: 350px;
+}
+
+#AreaInscricao{
+    width: 95%;
+    height: 300px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.105);
+    background-color: #ffffff;
+    border: solid 1.5px rgba(0, 0, 0, 0.181);
+}
+
+#AreaInscricao > h2{
+    background-color: #171717;
+    height: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #ffffff;
+    padding: 10px;
+}
+
+#AreaInscricao > ul{
+    list-style: none;
+    color: #000000;
+}
+
+#AreaInscricao > ul > li{
+    padding: 10px;
+    background-color: #ffffff;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.181);
+}
+
+#AreaInscricao > ul > li:hover{
+    background-color: #bcbcbc;
+}
+
+#AreaSalvos{
+    width: 95%;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.105);
+    background-color: white;
+    border: solid 1.5px rgba(0, 0, 0, 0.181);
+}
+
+#AreaSalvos > h2{
+    background-color: #171717;
+    height: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #ffffff;
+    padding: 10px;
+}
+
+#AreaSalvos > ul{
+    list-style: none;
+    color: #000000;
+}
+
+#AreaSalvos > ul > li{
+    padding: 10px;
+    background-color: #ffffff;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.181);
+}
+
+#AreaSalvos > ul > li:hover{
+    background-color: #bcbcbc;
+}
+
+footer{
+    min-height: 110px;
+    background-color: #def265;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+    
+footer > img{
+    width: 200px;
+    padding: 10px;
+}
+
+footer > p{
+    margin-bottom: 10px;
+}

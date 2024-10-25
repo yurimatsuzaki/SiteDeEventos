@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecione sua Cidade</title>
+    <link rel="stylesheet" href="./stylehomepage.css">
+    <link rel="stylesheet" href="style-responsive.css">
+</head>
+<body>
+    <div id="titulo">
+        <h1>CONECTANDO PESSOAS E IDEIAS.</h1>
+    </div>
+    <div class="selecionar">
+        <label for="cidade">Selecione sua região: </label>
+        <select id="cidade" name="cidade" class="botao">
+            <option value="" selected disabled hidden></option>
+            <option>Castanhal</option>
+            <option>Belém</option>
+            <option>Cametá</option>
+            <option>Bragança</option>
+            <option>Santa Izabel do Pará</option>
+            <option>Açailândia</option>
+            <option>São Luíz</option>
+        </select>
+        <a href="#" id="LinkHome"><button type="submit" class="botaoIniciar" id="iniciar">Confirmar</button></a>
+    </div>
+
+    <dialog id="selectCity">
+        <h3>Selecione uma cidade!</h3>
+        <button type="button" id="fecharDialog">OK</button>
+    </dialog>
+
+    <script src="script-home.js"></script>
+</body>
+</html>
