@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style-eventos.css">
     <link rel="stylesheet" href="style-responsive.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <title>Even Tree</title>
 </head>
 
@@ -36,59 +37,33 @@
 
     <section id="corpo">
         <section id="selecionar">
-            <div class="top-section">
-                <div class="sidebar">
+                <form action="">
                     <select id="city-selector" onchange="loadCalendarByCity()">
                         <option value="">Selecione sua cidade</option>
                         <option value="Cametá">Cametá</option>
                         <option value="Bragança">Bragança</option>
                         <option value="Santa Izabel do Pará">Santa Izabel do Pará</option>
                     </select>
-                </div>
+                    <button type="submit">Selecionar</button>
+                </form>
         </section>
-        <div class="container">
-                <!-- Seção principal do calendário -->
-                <div class="calendar-section">
-                    <h2 class="month-title">
-                        <span id="month-display">NOVEMBRO</span>
-                        <select id="month-selector" class="month-selector" onchange="changeMonth()">
-                            <option value="0">JANEIRO</option>
-                            <option value="1">FEVEREIRO</option>
-                            <option value="2">MARÇO</option>
-                            <option value="3">ABRIL</option>
-                            <option value="4">MAIO</option>
-                            <option value="5">JUNHO</option>
-                            <option value="6">JULHO</option>
-                            <option value="7">AGOSTO</option>
-                            <option value="8">SETEMBRO</option>
-                            <option value="9">OUTUBRO</option>
-                            <option value="10" selected>NOVEMBRO</option>
-                            <option value="11">DEZEMBRO</option>
-                        </select>
-                    </h2>
-                    <div class="days-of-week">
-                        <div>Dom</div>
-                        <div>Seg</div>
-                        <div>Ter</div>
-                        <div>Qua</div>
-                        <div>Qui</div>
-                        <div>Sex</div>
-                        <div>Sáb</div>
-                    </div>
-                    <div class="calendar" id="event-calendar">
-                        <!-- Aqui o calendário será carregado -->
-                    </div>
-                </div>
+
+        <section id="events-dates">
+            <h1>Eventos abertos em sua cidade:</h1>
+
+            <section id="events">
+
+            </section>
+        </section>
+
+        <div class="event-details" id="event-details">
+            <h2>Detalhes do Evento</h2>
+            <div id="event-info">
+                <p>Selecione um dia no calendário para ver os detalhes do evento.</p>
             </div>
-            <!-- Detalhes do evento -->
-            <div class="event-details" id="event-details">
-                <h2>Detalhes do Evento</h2>
-                <div id="event-info">
-                    <p>Selecione um dia no calendário para ver os detalhes do evento.</p>
-                </div>
-                <div class="poster">
-                    <img src="" alt="" id="imgPoster">                
-                </div>
+
+            <div class="poster">
+                <img src="" alt="" id="imgPoster">                
             </div>
         </div>
     </section>

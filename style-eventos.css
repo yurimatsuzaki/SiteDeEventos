@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Rye&display=swap');
+
 @font-face {
     font-family: 'SF pro';
     src: url(font/SFPRODISPLAYREGULAR.OTF) format(OpenType);
@@ -91,118 +93,75 @@ body {
 #corpo{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    height: 100vh;
 }
 
 #selecionar{
     width: 200px;
-    min-height: 200px;
+    min-height: 300px;
     background-color: #ffffff;
-    margin: 20px 20px 10px 20px;
+    margin: 20px 10px 0px 10px;
+    padding: 15px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     flex-grow: 1;
 }
 
-#selecionar > .top-section {
- margin: 20px;
-}
-
-.container {
-    width: 1000px;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    margin: 20px auto;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+form{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: end;
 }
 
-.calendar-section {
-    width: 806px;
-    text-align: center;
-    font-size: 30px;
+form > button{
+    width: 90px;
+    height: 30px;
+    padding: 5px;
+    font-size: 1em;
+    border-radius: 3px;
+    margin-top: 15px;
+    border: none;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.198);
+    transition: 100ms;
+}
+
+form > button:hover{
+    transform: scale(1.1);
+    background-color: #def265;
 }
 
 select {
     width: 100%;
     padding: 10px;
     font-size: 20px;
-    border: 2px solid #def265;
+    border: none;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.198);
     border-radius: 5px;
     background-color: #f9f9f9;
 }
 
-.calendar {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-gap: 10px;
-    padding: 20px;
+#events-dates{
     background-color: #ffffff;
+    margin: 20px 10px 0px 10px;
+    padding: 10px;
     border-radius: 10px;
-    margin-bottom: 20px;
-    opacity: 1;
-    transition: opacity 0.5s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
 }
 
-.calendar.hidden {
-    opacity: 0;
-}
-
-.calendar-day {
-    padding: 30px;
-    background-color: #f7f7f7;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.calendar-day:hover {
-    background-color: #def265;
-    color: #171717;
-    transform: scale(1.05);
-}
-
-.event-preview {
-    font-size: 18px;
-    background-color: #def265;
-    color: #171717;
-    padding: 5px;
-    border-radius: 4px;
+#events-dates > h1{
+    font-size: 2em;
     text-align: center;
-    margin-top: 10px;
-}
-
-.month-title {
-    color: #171717;
-    font-size: 50px;
-    margin-bottom: 20px;
-    display: inline-block;
-    position: relative;
-}
-
-.month-selector {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    cursor: pointer;
+    margin: 10px;
 }
 
 .event-details {
     width: 200px;
-    min-height: 200px;
+    height: 80px;
     padding: 20px;
     background-color: #ffffff;
-    margin: 20px 20px 10px 20px;
+    margin: 20px 10px 0px 10px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     flex-grow: 1;
@@ -211,8 +170,6 @@ select {
 .poster {
     margin-top: 20px;
     width: 100%;
-    height: 300px;
-    background-color: #171717;
     color: #f7f7f7;
     text-align: center;
     display: flex;
@@ -248,43 +205,4 @@ footer > img{
 
 footer > p{
     margin-bottom: 10px;
-}
-
-
-@media (max-width: 768px) {
-    .top-section {
-        flex-direction: column; 
-        align-items: center;
-    }
-
-    .sidebar {
-        width: 100%; 
-        margin-bottom: 20px;
-    }
-
-    .calendar-section {
-        width: 100%;
-    }
-
-    .calendar {
-        grid-template-columns: repeat(3, 1fr); 
-    }
-}
-
-@media (max-width: 480px) {
-    .calendar {
-        grid-template-columns: repeat(2, 1fr); 
-    }
-
-    .month-title {
-        font-size: 30px;
-    }
-
-    nav a {
-        font-size: 16px;
-    }
-
-    .calendar-day {
-        padding: 15px;
-    }
 }
